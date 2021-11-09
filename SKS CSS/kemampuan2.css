@@ -6,6 +6,11 @@
 	font-family: sans-serif;
 }
 
+/* inisiasi section */
+section {
+	padding-top: 3rem;
+}
+
 /* Membuat navbar sederhana */
 .container-satu {
 	max-width: 800px;
@@ -44,7 +49,7 @@ header {
 	padding-bottom: 1.5rem;
 	display: flex;
 	justify-content: center;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 }
 
 .hero-kanan {
@@ -72,6 +77,12 @@ header {
 	display: flex;
 	justify-content: center;
 	background-color: #aabbcc;
+	flex-wrap: wrap;
+}
+
+.container-tiga .row-1 {
+	max-width: 20%;
+	text-align: center;
 }
 
 .container-tiga .row-1 h3 {
@@ -79,9 +90,11 @@ header {
 }
 
 .container-tiga .row-2 {
+	max-width: 80%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+	place-items: center;
 }
 
 .kotak {
@@ -97,13 +110,36 @@ header {
 }
 .kotak p {
 	margin: 0.5rem;
+	max-width: 50%;
+}
+
+/* Menu Kedua */
+.container-4 {
+	width: 80%;
+	margin: 1rem auto;
 }
 
 /* responsive */
 
-@media (min-width: 480px) {
-	.container-dua {
-		flex-wrap: wrap;
-		align-items: center;
+@media (max-width: 580px) {
+	.container-tiga {
+		flex-direction: column;
+	}
+
+	.container-tiga .row-1 {
+		max-width: 100%;
+	}
+
+	.container-tiga .row-2 {
+		justify-items: center;
+	}
+
+	.kotak {
+		justify-content: center;
+	}
+
+	.container-tiga .row-2 {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
 	}
 }

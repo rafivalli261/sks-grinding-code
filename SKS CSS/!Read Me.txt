@@ -1,0 +1,1 @@
+Punten kang, itu yang file kemampuan2 belum selesai , saya masih agak bingung dengan cara membuat layout sesuai itu seperti apa. Dan untuk responsive nya juga agak bingung di bagian breakpointnya.
