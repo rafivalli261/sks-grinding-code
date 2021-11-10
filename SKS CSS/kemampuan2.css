@@ -9,6 +9,7 @@
 /* inisiasi section */
 section {
 	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 /* Membuat navbar sederhana */
@@ -114,9 +115,73 @@ header {
 }
 
 /* Menu Kedua */
+
+#menu-kedua {
+	background-color: lightgrey;
+}
+
 .container-4 {
+	max-width: 80%;
+	margin: 1rem auto;
+	background-color: lightpink;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.container-4 .row-1 {
+	max-width: 20%;
+	padding: 0.7rem;
+}
+
+.container-4 .row-2 {
+	max-width: 80%;
+	padding: 0.7rem;
+}
+.kotak-2 {
+	margin-bottom: 1rem;
+	padding: 0.2rem;
+}
+
+/* section ketiga */
+
+#menu-ketiga {
+	background-color: lightseagreen;
+}
+
+.container-5 {
+	background-color: lightskyblue;
 	width: 80%;
 	margin: 1rem auto;
+}
+
+.container-5 .row-1 {
+	padding: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.container-5 .row-2 {
+	display: flex;
+	padding: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-5 .row-2 .kotak-3 {
+	width: 250px;
+	height: 250px;
+	margin: 0.2rem;
+	background-color: lightyellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-5 .row-2 .kotak-3 p {
+	font-size: 3rem;
+	font-weight: bold;
 }
 
 /* responsive */
@@ -141,5 +206,15 @@ header {
 	.container-tiga .row-2 {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
+	}
+
+	.container-4 {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container-4 .row-1 {
+		max-width: 100%;
 	}
 }
