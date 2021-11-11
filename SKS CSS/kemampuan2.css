@@ -105,7 +105,7 @@ header {
 
 .kotak .gambar-1 {
 	width: 200px;
-	height: 230px;
+	height: 200px;
 	background-color: crimson;
 	margin: 0.5rem;
 }
@@ -184,9 +184,182 @@ header {
 	font-weight: bold;
 }
 
+/* menu keempat */
+
+#menu-keempat {
+	background-color: pink;
+}
+
+.container-6 {
+	background-color: plum;
+	width: 80%;
+	margin: 1rem auto;
+}
+
+.container-6 .row-1 {
+	background-color: purple;
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+
+.container-6 .row-2 {
+	background-color: peru;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container-6 .row-2 .kotak-4 {
+	background-color: darkorchid;
+	width: 250px;
+	margin: 0.7rem;
+	text-align: center;
+	padding: 1rem;
+}
+.container-6 .row-2 .kotak-4 p {
+	margin: 0.8rem 0;
+}
+.container-6 .row-2 .kotak-4 .gambar {
+	width: 80px;
+	height: 80px;
+	background-color: rgb(92, 174, 212);
+	margin: 0 auto 0.6rem;
+	border-radius: 10px;
+}
+
+/* Menu kelima */
+#menu-kelima {
+	background-color: deeppink;
+}
+
+.container-7 {
+	background-color: deepskyblue;
+	width: 80%;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.container-7 .row-1 {
+	padding: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.container-7 .row-2 {
+	background-color: gold;
+	padding: 0.4rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.container-7 .row-2 .kotak-5 {
+	background-color: firebrick;
+	padding: 0.7rem;
+	width: 250px;
+	margin: 0.5rem;
+}
+
+.container-7 .row-2 .row-2-2 {
+	background-color: fuchsia;
+	padding: 0.3rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container-7 .row-2 .row-2-2 .profil {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: gainsboro;
+	margin: 0.2rem;
+}
+.container-7 .row-2 .row-2-2 .name {
+	margin: 0.2rem;
+}
+
+.container-7 .row-2 .row-2-2 .name p {
+	font-style: oblique;
+}
+
+.container-7 .row-2 .row-2-2 .name a {
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* jeda */
+
+#jeda {
+	background-image: linear-gradient(90deg, darkblue, blue);
+}
+
+.bungkus {
+	width: 80%;
+	margin: 1rem auto;
+	/* padding: 3rem; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bungkus .kiri h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	color: ivory;
+	margin: 1.4rem 0;
+}
+
+.bungkus .kanan a {
+	color: white;
+	background-color: rgb(27, 185, 27);
+	padding: 0.5rem 3rem;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* menu keenam */
+/* sama dengan menu ke 2 */
+
+/* footer */
+
+footer {
+	background-color: darkblue;
+	padding: 1.2rem 0;
+}
+
+.container-8 {
+	width: 80%;
+	margin: 1.5rem auto;
+	display: flex;
+	color: floralwhite;
+	font-size: 0.8rem;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.container-8 .kanan ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container-8 .kanan ul li {
+	margin: 1rem;
+}
+
 /* responsive */
 
-@media (max-width: 580px) {
+@media (max-width: 800px) {
 	.container-tiga {
 		flex-direction: column;
 	}
@@ -216,5 +389,10 @@ header {
 
 	.container-4 .row-1 {
 		max-width: 100%;
+	}
+
+	.container-8 {
+		justify-content: center;
+		align-items: center;
 	}
 }
