@@ -1,0 +1,28 @@
+/* Navbar */
+li {
+	margin-left: 0.5rem;
+}
+
+.navbar .container a.navbar-brand {
+	color: rgb(32, 197, 32);
+}
+
+.navbar ul li a {
+	color: #555;
+}
+
+.navbar ul li a:hover {
+	color: lightgreen;
+}
+
+.navbar ul li a.btn {
+	background-color: rgb(32, 197, 32);
+	color: #fff;
+}
+
+/* Jumbotron */
+#jumbotron {
+	background-image: url(noelle.png);
+	background-size: cover;
+	height: 50vh;
+}
