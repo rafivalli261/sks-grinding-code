@@ -22,7 +22,19 @@ li {
 
 /* Jumbotron */
 #jumbotron {
-	background-image: url(noelle.png);
+	background-image: url(../image/noelle.png);
 	background-size: cover;
 	height: 50vh;
+}
+
+section:not(section#jumbotron) {
+	margin-top: 3rem;
+}
+
+#angka {
+	background-color: #eee;
+}
+
+#angka h2 {
+	color: rgb(32, 197, 32);
 }
